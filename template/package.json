@@ -15,10 +15,7 @@
   },
   "dependencies": {
     "vue": "^2.5.2"{{#router}},
-    "vue-router": "^3.0.1"{{/router}},
-    {{#vuex}}
-    "vuex": "^2.3.1",
-    {{/vuex}}
+    "vue-router": "^3.0.1"{{/router}}
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -100,16 +97,7 @@
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.18.2",
-    "webpack-merge": "^4.1.0",
-    {{#sass}}
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "node-sass": "^4.5.3",
-    {{/sass}}
-    {{#firebase}}
-    "firebase": "^4.0.0",
-    "firebase-mock": "^2.2.2",
-    {{/firebase}}
+    "webpack-merge": "^4.1.0"
   },
   "engines": {
     "node": ">= 4.0.0",
