@@ -106,8 +106,8 @@
     "node-sass": "^4.5.3",
     {{/sass}}
     {{#firebase}}
-    "firebase": "^4.0.0",
-    "firebase-mock": "^2.2.2",
+    "firebase": "4.9.0",
+    "vuefire": "^2.0.0-alpha.6",
     {{/firebase}}
     "webpack-merge": "^4.1.0"
   },
