@@ -1,10 +1,9 @@
-module.exports = {
+export default {
   "helpers": {
     "if_or": function (v1, v2, options) {
       if (v1 || v2) {
         return options.fn(this);
       }
-
       return options.inverse(this);
     }
   },
@@ -43,6 +42,16 @@ module.exports = {
     "router": {
       "type": "confirm",
       "message": "Install vue-router?"
+    },
+    "firebase": {
+      "type": "confirm",
+      "message": "Install Firebase Configuration to your project?",
+      "default": false
+    },
+    "vuex": {
+      "type": "confirm",
+      "message": "Install Vuex?",
+      "default": false
     },
     "sass": {
       "type": "confirm",
