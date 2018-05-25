@@ -16,6 +16,7 @@ import store from './store/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#sass}}
 import './assets/sass/index.scss'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/sass}}
+//space require here 
 {{#firebase}}
 Vue.use(VueFire){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/firebase}}
