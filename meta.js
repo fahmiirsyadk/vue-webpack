@@ -7,7 +7,7 @@ module.exports = {
  
       return options.inverse(this); 
     } 
-  }, 
+  },
   "prompts": {
     "name": {
       "type": "string",
@@ -103,6 +103,7 @@ module.exports = {
     "src/router/**/*": "router",
     "src/server/firebase.js": "firebase",
     "src/store/**/*": "vuex",
+    "src/assets/sass/**/*": "sass",
   },
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };

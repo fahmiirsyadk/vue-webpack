@@ -13,7 +13,9 @@ import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#vuex}}
 import store from './store/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
-
+{{#sass}}
+import './assets/sass/index.scss'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/sass}}
 {{#firebase}}
 Vue.use(VueFire){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/firebase}}
