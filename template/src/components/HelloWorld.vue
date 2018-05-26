@@ -10,7 +10,7 @@
       <br>
       <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
     </ul>
-    <h2>Ecosystem</h2>
+    <h2 class="border-black">Ecosystem</h2>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
@@ -21,6 +21,11 @@
 </template>
 
 <script>
+{{#firebase}}
+// code below import db from firebase.js
+import { db } from './../server/firebase'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+
+{{/firebase}}
 export default {
   name: 'HelloWorld',
   data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {

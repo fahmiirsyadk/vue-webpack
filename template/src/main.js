@@ -10,7 +10,13 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
-
+{{#vuex}}
+import store from './store/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/vuex}}
+{{#sass}}
+import './assets/sass/index.scss'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/sass}}
+// space require here
 {{#firebase}}
 Vue.use(VueFire){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/firebase}}
@@ -19,6 +25,9 @@ Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  {{#vuex}}
+  store,
+  {{/vuex}}
   {{#router}}
   router,
   {{/router}}

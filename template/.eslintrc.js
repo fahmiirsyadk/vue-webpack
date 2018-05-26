@@ -44,6 +44,13 @@ module.exports = {
       'js': 'never',
       'vue': 'never'
     }],
+    "import/prefer-default-export": ["off"],
+    "indent":"off",
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "no-unused-vars": ["off"],
+    'import/no-extraneous-dependencies': ['error', {
+      'optionalDependencies': ['test/unit/index.js']
+    }],
     // allow optionalDependencies
     'import/no-extraneous-dependencies': ['error', {
       'optionalDependencies': ['test/unit/index.js']
