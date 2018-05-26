@@ -105,5 +105,5 @@ module.exports = {
     "src/store/**/*": "vuex",
     "src/assets/sass/**/*": "sass",
   },
-  "completeMessage": "To get started:\n\n  if you using firebase , set your firebase config into server/firebase.js.\n\n{{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
+  "completeMessage": "To get started:\n\n*if you using firebase , set your firebase config into server/firebase.js*\n\n{{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };
