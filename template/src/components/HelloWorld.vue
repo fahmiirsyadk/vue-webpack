@@ -24,6 +24,7 @@
 {{#firebase}}
 // code below import db from firebase.js
 import { db } from './../server/firebase'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+
 {{/firebase}}
 export default {
   name: 'HelloWorld',
