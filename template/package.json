@@ -15,6 +15,8 @@
   },
   "dependencies": {
     {{#firebase}}
+    "@firebase/app": "^0.3.3",
+    "@firebase/firestore": "^0.5.4",
     "firebase": "4.9.0",
     "vuefire": "^2.0.0-alpha.6",
     {{/firebase}}

@@ -8,10 +8,10 @@ import { mutations } from './mutations'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 Vue.use(Vuex){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 export default new Vuex.Store({
- state: {
-  count: 0,
- },
- mutations,
- getters,
- actions,
+    state: {
+        count: 0,
+      },
+      mutations,
+      getters,
+      actions,
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
